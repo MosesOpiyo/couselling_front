@@ -30,3 +30,8 @@ button {
     background-color: #268B6A;
     margin-bottom: 20px;
 }
+
+img {
+    height: 75vh;
+    border-radius: 30px;
+}
