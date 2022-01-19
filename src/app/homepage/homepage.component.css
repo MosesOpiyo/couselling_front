@@ -1,0 +1,18 @@
+.fancy {
+    color: purple;
+}
+.navlogo {
+    max-width: 50%;
+}
+button {
+    color: #ffff;
+    border-radius: 20px;
+    padding: 15px;
+    display: inline-block;
+    margin-right: 20px;
+    background-color: #5545CD;
+
+}
+.socials {
+    color: #5545CD;
+}
