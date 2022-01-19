@@ -9,7 +9,7 @@
                 <div class="navbar-nav">
                     <a class="nav-link active" aria-current="page" style="margin-left: 30px;" routerLink="">Login</a>
                     <a class="nav-link" routerLink="signup">Sign up</a>
-                    <a class="nav-link" routerLink="/3">Are you a consultant?</a>
+                    <a class="nav-link" routerLink="">Are you a consultant?</a>
 
                 </div>
             </div>
@@ -20,19 +20,19 @@
             <div class="col-lg-5">
                 <h2 class="clo-lg-5 text-center py-5">Sign up</h2>
                 <h6 class="clo-lg-5 text-center py-1" style="color: black;">Sign in, get help,dont struggle alone</h6>
-                <form>
-                    <input type="text " id="username " class="form-control " name="username " placeholder="username ">
+                <form #registerForm='ngForm' (ngSubmit)="signUp()">
+                    <input type="text" id="username" [(ngModel)]="username" class="form-control" name="username" placeholder="username">
                     <br>
-                    <input type="email " id="email " class="form-control " name="email " placeholder="email ">
+                    <input type="email" id="email" [(ngModel)]="email" class="form-control" name="email" placeholder="email">
                     <br>
-                    <input type="password " id="password " class="form-control " name="password " placeholder="password ">
+                    <input type="password" id="password " [(ngModel)]="password" class="form-control" name="password" placeholder="password ">
                     <br>
-                    <button class="btn btn-succes " type="submit ">Sign up</button>
-                    <p class="clo-lg-5 text-center py-5 ">Have an account?<br><a routerLink=" ">Login</a></p>
+                    <button class="btn btn-succes" type="submit ">Sign up</button>
+                    <p class="clo-lg-5 text-center py-5">Have an account?<br><a routerLink=" ">Login</a></p>
                 </form>
             </div>
-            <div class="col-lg-5 ">
-                <img src="https://github.com/MosesOpiyo/counselling_front/blob/ft/moses/src/assets/images/therapy2.jpg?raw=true " class="img-fluid " alt=" ">
+            <div class="col-lg-5">
+                <img src="https://github.com/MosesOpiyo/counselling_front/blob/ft/moses/src/assets/images/therapy2.jpg?raw=true" class="img-fluid " alt=" ">
             </div>
         </div>
     </div>

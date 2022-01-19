@@ -7,8 +7,8 @@
           </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" style="margin-left: 30px;" routerLink="/1">Login</a>
-                    <a class="nav-link" routerLink="/2">Sign up</a>
+                    <a class="nav-link active" aria-current="page" style="margin-left: 30px;" routerLink="">Login</a>
+                    <a class="nav-link" routerLink="/sign_up">Sign up</a>
                     <a class="nav-link" routerLink="/3">Are you a consultant?</a>
 
                 </div>
@@ -20,10 +20,10 @@
             <div class="col-lg-5">
                 <h2 class="clo-lg-5 text-center py-5">Login</h2>
                 <h6 class="clo-lg-5 text-center py-2" style="color: black;">Welcome back. Back to positivity</h6>
-                <form>
-                    <input id="email" name="email" placeholder="email" class="form-control form-control" type="email" required>
+                <form #loginForm="ngForm" (ngSubmit)="loginUser()">
+                    <input id="email" name="email" placeholder="email" [(ngModel)]="email" class="form-control form-control" type="email" required>
                     <br>
-                    <input input id="password" name="password" placeholder="enter your password" class="form-control" type="password" required>
+                    <input input id="password" name="password" [(ngModel)]="password" placeholder="enter your password" class="form-control" type="password" required>
                     <br>
                     <button class="btn btn-succes" type="submit">Login</button>
                     <p class="clo-lg-5 text-center py-5 ">Have an account?<br><a routerLink=" ">Sign up</a></p>
