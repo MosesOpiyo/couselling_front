@@ -31,6 +31,24 @@ export class AccountService {
       console.log(error)
     })
   }
+  counselor_login(credentials:any){
+    this.http.post(`${environment.BASE_URL}accounts/counsellor_login`,credentials).subscribe((res:any)=>{
+      sessionStorage.setItem('token', res['token'])
+      this.auth.authentication(true)
+      this.snackbar.open(`Welcome back counsellor ${credentials.get('username')}`,"Dismiss")
+    },error=>{
+      this.snackbar.open(`There was a problem logging you in, please check your credentials and try again.`,"Dismiss",{duration:3000})
+      console.log(error)
+    })
+  }
+  counsellor_register(credentials:any){
+    this.http.post(`${environment.BASE_URL}accounts/counsellor_registration`,credentials).subscribe(response=>{
+      this.snackbar.open(`Congratulations ${credentials.get('username')}, your counsellor account was successfully created`,"Thank you")
+    },error => {
+      this.snackbar.open(`There was a problem creating your account, please check your credentials and try again.`,"Dismiss",{duration:3000})
+      console.log(error)
+    })
+  }
 
   logout(){
     sessionStorage.removeItem('token')
