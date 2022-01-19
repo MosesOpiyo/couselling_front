@@ -1,0 +1,39 @@
+<div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" style="font-family:Reggae One;" href="#">Consultation</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" style="margin-left: 30px;" routerLink="">Login</a>
+                    <a class="nav-link" routerLink="signup">Sign up</a>
+                    <a class="nav-link" routerLink="">Are you a consultant?</a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5 pt-5">
+        <div class="row g-0">
+            <div class="col-lg-5">
+                <h2 class="clo-lg-5 text-center py-5">Sign up</h2>
+                <h6 class="clo-lg-5 text-center py-1" style="color: black;">Sign in, get help,dont struggle alone</h6>
+                <form #registerForm='ngForm' (ngSubmit)="signUp()">
+                    <input type="text" id="username" [(ngModel)]="username" class="form-control" name="username" placeholder="username">
+                    <br>
+                    <input type="email" id="email" [(ngModel)]="email" class="form-control" name="email" placeholder="email">
+                    <br>
+                    <input type="password" id="password " [(ngModel)]="password" class="form-control" name="password" placeholder="password ">
+                    <br>
+                    <button class="btn btn-succes" type="submit ">Sign up</button>
+                    <p class="clo-lg-5 text-center py-5">Have an account?<br><a routerLink=" ">Login</a></p>
+                </form>
+            </div>
+            <div class="col-lg-5">
+                <img src="https://github.com/MosesOpiyo/counselling_front/blob/ft/moses/src/assets/images/therapy2.jpg?raw=true" class="img-fluid " alt=" ">
+            </div>
+        </div>
+    </div>
+</div>
