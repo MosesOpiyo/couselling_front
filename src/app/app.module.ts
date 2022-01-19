@@ -10,13 +10,17 @@ import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { OptionsComponent } from './options/options.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CounselorRegisterComponent } from './counselor-register/counselor-register.component';
+import { CounsellorSpecificsComponent } from './counsellor-specifics/counsellor-specifics.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     SignupComponent,
-    OptionsComponent
+    OptionsComponent,
+    CounselorRegisterComponent,
+    CounsellorSpecificsComponent
   ],
   imports: [
     BrowserModule,
