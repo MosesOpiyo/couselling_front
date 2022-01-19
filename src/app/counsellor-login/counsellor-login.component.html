@@ -20,10 +20,10 @@
             <div class="col-lg-5">
                 <h2 class="clo-lg-5 text-center py-5">Become a counselor</h2>
                 <h4 class="clo-lg-5 text-center py-2" style="color: black;">The manner of gift giving is priceless.<br> Help clients in need of your gift</h4>
-                <form>
-                    <input style="margin-bottom: 50px;" id="email" name="email" placeholder="email" class="form-control form-control" type="email" required>
+                <form #CounsellorloginForm="ngForm" (ngSubmit)="loginCounsellor()">
+                    <input style="margin-bottom: 50px;" [(ngModel)]="email" id="email" name="email" placeholder="email" class="form-control form-control" type="email" required>
                     <br>
-                    <input style="margin-bottom: 50px;" input id="password" name="password" placeholder="enter your password" class="form-control" type="password" required>
+                    <input style="margin-bottom: 50px;" [(ngModel)]="password" input id="password" name="password" placeholder="enter your password" class="form-control" type="password" required>
                     <br>
                     <button class="btn btn-succes" type="submit">Login</button>
                     <br>

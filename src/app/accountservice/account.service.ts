@@ -35,7 +35,7 @@ export class AccountService {
     this.http.post(`${environment.BASE_URL}accounts/counsellor_login`,credentials).subscribe((res:any)=>{
       sessionStorage.setItem('token', res['token'])
       this.auth.authentication(true)
-      this.snackbar.open(`Welcome back counsellor ${credentials.get('username')}`,"Dismiss")
+      this.snackbar.open(`Welcome back counsellor `,"Dismiss")
     },error=>{
       this.snackbar.open(`There was a problem logging you in, please check your credentials and try again.`,"Dismiss",{duration:3000})
       console.log(error)
