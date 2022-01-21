@@ -15,6 +15,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AboutComponent } from './about/about.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { CounsellorPageComponent } from './counsellor-page/counsellor-page.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     OptionsComponent,
     AboutComponent,
     FooterComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    CounsellorPageComponent
   ],
   imports: [
     BrowserModule,
