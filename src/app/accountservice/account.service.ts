@@ -10,7 +10,7 @@ import { AuthService } from '../authservice/auth.service';
 })
 export class AccountService {
 
-  constructor(private http:HttpClient, private auth:AuthService, private snackbar:MatSnackBar) { }
+  constructor(private http:HttpClient, private auth:AuthService, private snackbar:MatSnackBar, private route:Router) { }
 
   login(credentials:any){
     this.http.post(`${environment.BASE_URL}accounts/login`,credentials).subscribe((res:any)=>{
@@ -42,11 +42,10 @@ export class AccountService {
     })
   }
   counsellor_register(credentials:any){
-    let headers = new HttpHeaders({
-      'Authorization':`Token ${sessionStorage.getItem('token')}`
-      })
-    this.http.post(`${environment.BASE_URL}accounts/counsellor_registration`,credentials,{"headers":headers}).subscribe(response=>{
+    
+    this.http.post(`${environment.BASE_URL}accounts/counsellor_registration`,credentials).subscribe(response=>{
       this.snackbar.open(`Congratulations ${credentials.get('username')}, your counsellor account was successfully created`,"Thank you")
+      this.route.navigate(['consellor_specifics'])
     },error => {
       this.snackbar.open(`There was a problem creating your account, please check your credentials and try again.`,"Dismiss",{duration:3000})
       console.log(error)
