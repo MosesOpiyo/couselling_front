@@ -45,7 +45,7 @@ export class AccountService {
     let headers = new HttpHeaders({
       'Authorization':`Token ${sessionStorage.getItem('token')}`
       })
-    this.http.post(`${environment.BASE_URL}accounts/counsellor_registration`,credentials).subscribe(response=>{
+    this.http.post(`${environment.BASE_URL}accounts/counsellor_registration`,credentials,{"headers":headers}).subscribe(response=>{
       this.snackbar.open(`Congratulations ${credentials.get('username')}, your counsellor account was successfully created`,"Thank you")
     },error => {
       this.snackbar.open(`There was a problem creating your account, please check your credentials and try again.`,"Dismiss",{duration:3000})
