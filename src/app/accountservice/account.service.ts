@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient,HttpHeaders } from '@angular/common/http';
 import {MatSnackBar} from '@angular/material/snack-bar';
 
 import { environment } from 'src/environments/environment';
@@ -42,9 +42,20 @@ export class AccountService {
     })
   }
   counsellor_register(credentials:any){
+    let headers = new HttpHeaders({
+      'Authorization':`Token ${sessionStorage.getItem('token')}`
+      })
     this.http.post(`${environment.BASE_URL}accounts/counsellor_registration`,credentials).subscribe(response=>{
       this.snackbar.open(`Congratulations ${credentials.get('username')}, your counsellor account was successfully created`,"Thank you")
     },error => {
+      this.snackbar.open(`There was a problem creating your account, please check your credentials and try again.`,"Dismiss",{duration:3000})
+      console.log(error)
+    })
+  }
+  consellor_details(credentials:any){
+    this.http.post(`${environment.BASE_URL}counsellor_details`,credentials).subscribe(response=>{
+      this.snackbar.open(`Additional details for ${credentials.get('first_name')}, have been successfully added`)
+    },error =>{
       this.snackbar.open(`There was a problem creating your account, please check your credentials and try again.`,"Dismiss",{duration:3000})
       console.log(error)
     })
