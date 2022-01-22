@@ -51,8 +51,8 @@ export class AccountService {
       console.log(error)
     })
   }
-  consellor_details(credentials:any){
-    this.http.post(`${environment.BASE_URL}counsellor_details`,credentials).subscribe(response=>{
+  counsellor_details(credentials:any){
+    this.http.post(`${environment.BASE_URL}counsultion/counsellor_details`,credentials).subscribe(response=>{
       this.snackbar.open(`Additional details for ${credentials.get('first_name')}, have been successfully added`)
     },error =>{
       this.snackbar.open(`There was a problem creating your account, please check your credentials and try again.`,"Dismiss",{duration:3000})

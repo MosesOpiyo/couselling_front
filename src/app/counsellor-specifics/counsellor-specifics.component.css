@@ -6,3 +6,10 @@ input {
     border-radius: 20px;
     margin-bottom: 20px;
 }
+
+img {
+    height: 110vh;
+    border-radius: 30px;
+    margin-top: 40px;
+    margin-left: 15%;
+}
