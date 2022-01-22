@@ -19,22 +19,22 @@
             <div class="col-lg-5" style="margin-top: 70px;">
                 <h2 class="clo-lg-5 text-center py-5">Become a counselor</h2>
                 <h4 class="clo-lg-5 text-center py-2" style="color: black;">We will be needing addtional details of <br> yourself to verify your legitimacy</h4>
-                <form action="">
+                <form #CounsellorDetailsForm='ngForm' (ngSubmit)="CounsellorDetails()">
                     <label for="#first_name">Your first name</label>
                     <br>
-                    <input style="height:8vh" type="text" id="first_name" class="form-control" name="first_name">
+                    <input style="height:8vh" type="text" ([ngModel])="first_name" id="first_name" class="form-control" name="first_name">
 
                     <label for="#last_name">Your Last name</label>
                     <br>
-                    <input style="height:8vh" type="text" id="last_name" class="form-control" name="last_name">
+                    <input style="height:8vh" type="text" ([ngModel])="last_name" id="last_name" class="form-control" name="last_name">
 
                     <label for="#experiences">Please share your work experiences below.</label>
                     <br>
-                    <input style="height:15vh" type="text" id="experiences" class="form-control" name="experiences">
+                    <input style="height:15vh" type="text" ([ngModel])="work_experience" id="experiences" class="form-control" name="experiences">
 
                     <label for="#qualities">Please share your qualities below</label>
                     <br>
-                    <input style="height:15vh" type="text" id="qualities" class="form-control" name="qualities">
+                    <input style="height:15vh" type="text" ([ngModel])="qualities" id="qualities" class="form-control" name="qualities">
                     <br>
                     <button class="btn btn-success">Submit</button>
                 </form>

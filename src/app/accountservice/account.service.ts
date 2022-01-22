@@ -42,8 +42,7 @@ export class AccountService {
     })
   }
   counsellor_register(credentials:any){
-    
-    this.http.post(`${environment.BASE_URL}accounts/counsellor_registration`,credentials).subscribe(response=>{
+    this.http.post(`${environment.BASE_URL}accounts/counsellor_registration`,credentials).subscribe((response:any)=>{
       this.snackbar.open(`Congratulations ${credentials.get('username')}, your counsellor account was successfully created`,"Thank you")
       this.route.navigate(['consellor_specifics'])
     },error => {
