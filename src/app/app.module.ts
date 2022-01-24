@@ -15,6 +15,7 @@ import { CounsellorSpecificsComponent } from './counsellor-specifics/counsellor-
 import { CounsellorLoginComponent } from './counsellor-login/counsellor-login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ClientDashboardComponent } from './client-dashboard/client-dashboard.component';
+import { CounsellorGroupsComponent } from './counsellor-groups/counsellor-groups.component';
 
 
 @NgModule({
@@ -28,6 +29,7 @@ import { ClientDashboardComponent } from './client-dashboard/client-dashboard.co
     CounsellorLoginComponent,
     DashboardComponent,
     ClientDashboardComponent,
+    CounsellorGroupsComponent,
   ],
   imports: [
     BrowserModule,
