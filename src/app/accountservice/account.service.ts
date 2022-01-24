@@ -26,6 +26,7 @@ export class AccountService {
   register(credentials:any){
     this.http.post(`${environment.BASE_URL}accounts/register`,credentials).subscribe(response=>{
       this.snackbar.open(`Congratulations ${credentials.get('username')}, your account was successfully created`,"Thank you")
+      this.route.navigate(['login'])
     },error => {
       this.snackbar.open(`There was a problem creating your account, please check your credentials and try again.`,"Dismiss",{duration:3000})
       console.log(error)
@@ -36,6 +37,7 @@ export class AccountService {
       sessionStorage.setItem('token', res['token'])
       this.auth.authentication(true)
       this.snackbar.open(`Welcome back counsellor `,"Dismiss")
+      this.route.navigate(['dashboard'])
     },error=>{
       this.snackbar.open(`There was a problem logging you in, please check your credentials and try again.`,"Dismiss",{duration:3000})
       console.log(error)
@@ -44,7 +46,7 @@ export class AccountService {
   counsellor_register(credentials:any){
     this.http.post(`${environment.BASE_URL}accounts/counsellor_registration`,credentials).subscribe((response:any)=>{
       this.snackbar.open(`Congratulations ${credentials.get('username')}, your counsellor account was successfully created`,"Thank you")
-      this.route.navigate(['consellor_specifics'])
+      this.route.navigate(['counsellor_login'])
     },error => {
       this.snackbar.open(`There was a problem creating your account, please check your credentials and try again.`,"Dismiss",{duration:3000})
       console.log(error)
@@ -58,7 +60,12 @@ export class AccountService {
       console.log(error)
     })
   }
-
+counsellor_profile(){
+  let headers = new HttpHeaders({
+    'Authorization':`Token ${sessionStorage.getItem('token')}`
+  })
+  return this.http.get(`${environment.BASE_URL}counsultion/counsellor_profile`,{'headers':headers})
+}
   logout(){
     sessionStorage.removeItem('token')
     this.auth.authentication(false)

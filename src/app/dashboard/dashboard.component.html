@@ -1,0 +1,60 @@
+<div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" style="font-family:Reggae One;" href="#">Consultation</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" style="margin-left: 30px;">Home</a>
+                    <a class="nav-link">Activity</a>
+                    <a class="nav-link">Counsellor</a>
+                    <a class="nav-link">Group</a>
+                    <a class="nav-link">About</a>
+                    <div class="card" style="background-color: black;width: 35px;height: 35px;margin-left: 850px;border-radius: 30px;"></div>
+                    <button class="btn btn-danger" style="margin-left: 20px;">Logout</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5 pt-5">
+        <div class="row g-0">
+            <div class="col-lg-3">
+                <div class="card" style="width: 15pc;height:15pc;border-radius: 50%;background-color: black;">
+
+                </div>
+                <h1 style="margin-top: 7%;">{{user['username']}}</h1>
+                <h3 style="margin-top: 2%;">Date joined: {{user['date_joined'] | date}}</h3>
+                <button class="btn btn-success" style="width: 15pc;" routerLink="/consellor_specifics">Edit Profile</button>
+                <div class="details" style="margin-top: 15%;">
+                    <button class="btn btn-info">Details</button>
+                    <h1 style="margin-top: 7%;">Clients:</h1>
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="card" style="width: 70px;height: 70px;background-color: black;border-radius: 50px;"></div>
+                        </div>
+                        <div class="col-lg-5" style="margin-top: 15px;">
+                            <h3>Name</h3>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+            <div class="col-lg-8" style="border: 1px solid rgb(218, 217, 217);border-radius: 40px;height: auto;">
+                <div class="calender" style="background-color: blue; width: 95%;height: 30vh;margin-top: 20px;margin-left: 20px;border-radius: 30px;">
+
+                </div>
+                <div class="Group">
+                    <h1 style="margin-top:20px;margin-left: 20px;">Group Activity</h1>
+                    <div class="card" style="width: 95%;height: 40vh;margin-left: 20px;border-radius: 20px;background-color: blue;"></div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>

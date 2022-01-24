@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { CounsellorLoginComponent } from './counsellor-login/counsellor-login.component';
 import { CounsellorSpecificsComponent } from './counsellor-specifics/counsellor-specifics.component';
 import { CounselorRegisterComponent } from './counselor-register/counselor-register.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 
@@ -12,6 +13,7 @@ const routes: Routes = [
   {path:'counsellor_registration',component:CounselorRegisterComponent},
   {path:'counsellor_login',component:CounsellorLoginComponent},
   {path:'consellor_specifics',component:CounsellorSpecificsComponent},
+  {path:'dashboard',component:DashboardComponent}
 ];
 
 @NgModule({

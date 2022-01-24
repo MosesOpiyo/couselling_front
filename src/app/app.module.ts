@@ -13,6 +13,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CounselorRegisterComponent } from './counselor-register/counselor-register.component';
 import { CounsellorSpecificsComponent } from './counsellor-specifics/counsellor-specifics.component';
 import { CounsellorLoginComponent } from './counsellor-login/counsellor-login.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { CounsellorLoginComponent } from './counsellor-login/counsellor-login.co
     CounselorRegisterComponent,
     CounsellorSpecificsComponent,
     CounsellorLoginComponent,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,
