@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ClientDashboardComponent } from './client-dashboard/client-dashboard.component';
 import { CounsellorLoginComponent } from './counsellor-login/counsellor-login.component';
 import { CounsellorSpecificsComponent } from './counsellor-specifics/counsellor-specifics.component';
 import { CounselorRegisterComponent } from './counselor-register/counselor-register.component';
@@ -13,7 +14,8 @@ const routes: Routes = [
   {path:'counsellor_registration',component:CounselorRegisterComponent},
   {path:'counsellor_login',component:CounsellorLoginComponent},
   {path:'consellor_specifics',component:CounsellorSpecificsComponent},
-  {path:'dashboard',component:DashboardComponent}
+  {path:'dashboard',component:DashboardComponent},
+  {path:'client_dashboard',component:ClientDashboardComponent}
 ];
 
 @NgModule({
