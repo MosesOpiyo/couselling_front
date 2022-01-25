@@ -20,8 +20,11 @@
     "@angular/platform-browser": "~12.2.0",
     "@angular/platform-browser-dynamic": "~12.2.0",
     "@angular/router": "~12.2.0",
+    "badges": "^4.27.0",
     "cors": "^2.8.5",
     "ng-snotify": "^9.0.1",
+    "ngx-bootstrap": "^8.0.0",
+    "ngx-perfect-scrollbar": "^10.1.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
