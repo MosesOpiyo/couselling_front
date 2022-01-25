@@ -4,6 +4,7 @@ import { ClientDashboardComponent } from './client-dashboard/client-dashboard.co
 import { CounsellorGroupsComponent } from './counsellor-groups/counsellor-groups.component';
 import { CounsellorLoginComponent } from './counsellor-login/counsellor-login.component';
 import { CounsellorSpecificsComponent } from './counsellor-specifics/counsellor-specifics.component';
+import { CounsellorsOptionComponent } from './counsellors-option/counsellors-option.component';
 import { CounselorRegisterComponent } from './counselor-register/counselor-register.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoginComponent } from './login/login.component';
@@ -17,7 +18,8 @@ const routes: Routes = [
   {path:'consellor_specifics',component:CounsellorSpecificsComponent},
   {path:'dashboard',component:DashboardComponent},
   {path:'client_dashboard',component:ClientDashboardComponent},
-  {path:'counsellor_groups',component:CounsellorGroupsComponent}
+  {path:'counsellor_groups',component:CounsellorGroupsComponent},
+  {path:'counsellor_options',component:CounsellorsOptionComponent},
 ];
 
 @NgModule({

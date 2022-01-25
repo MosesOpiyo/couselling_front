@@ -7,11 +7,14 @@
           </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" style="margin-left: 30px;">Home</a>
-                    <a class="nav-link">Activity</a>
-                    <a class="nav-link">Counsellor</a>
-                    <a class="nav-link">Group</a>
-                    <a class="nav-link">About</a>
+                    <div class="navbar-nav">
+                        <button class="nav-link active" aria-current="page" style="margin-left: 30px;">Home</button>
+                        <a class="btn btn-primary" routerLink="/client_dashboard">Activity</a>
+                        <button class="nav-link" routerLink="#">Groups</button>
+                        <button class="nav-link" routerLink="/counsellor_options">Counsellors</button>
+                        <button class="nav-link">About</button>
+
+                    </div>
                     <div class="card" style="background-color: black;width: 35px;height: 35px;margin-left: 850px;border-radius: 30px;"></div>
                     <button class="btn btn-danger" routerLink="" (click)="logout()" style="margin-left: 20px;">Logout</button>
                 </div>
@@ -44,9 +47,7 @@
                 </div>
             </div>
             <div class="col-lg-8" style="border: 1px solid rgb(218, 217, 217);border-radius: 40px;height: auto;">
-                <div class="calender" style="background-color: blue; width: 95%;height: 30vh;margin-top: 20px;margin-left: 20px;border-radius: 30px;">
 
-                </div>
                 <div class="Group">
                     <h1 style="margin-top:20px;margin-left: 20px;">Group Activity</h1>
                     <div class="card" style="width: 95%;height: 40vh;margin-left: 20px;border-radius: 20px;background-color: blue;"></div>
