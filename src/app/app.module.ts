@@ -17,6 +17,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ClientDashboardComponent } from './client-dashboard/client-dashboard.component';
 import { CounsellorGroupsComponent } from './counsellor-groups/counsellor-groups.component';
 import { CounsellorsOptionComponent } from './counsellors-option/counsellors-option.component';
+import { CalenderComponent } from './calender/calender.component';
 
 
 @NgModule({
@@ -32,6 +33,7 @@ import { CounsellorsOptionComponent } from './counsellors-option/counsellors-opt
     ClientDashboardComponent,
     CounsellorGroupsComponent,
     CounsellorsOptionComponent,
+    CalenderComponent,
   ],
   imports: [
     BrowserModule,
