@@ -1,0 +1,32 @@
+.fancy {
+    color: blue;
+}
+.navlogo {
+    max-width: 50%;
+    margin-left: 50px;
+}
+button {
+    color: #ffff;
+    border-radius: 20px;
+    padding: 15px;
+    display: inline-block;
+    margin-right: 20px;
+    /* background-color: #5545CD; */
+}
+button:hover{
+    background: green;
+}
+  
+
+.socials {
+    color: #5545CD;
+}
+
+#text {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.welcome {
+    margin-left: 50px;
+    margin-right: 50px;
+}
