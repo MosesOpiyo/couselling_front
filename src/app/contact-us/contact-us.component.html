@@ -1,43 +1,110 @@
-<div class="container" id="contact">
-    <div class="content">
-        <div class="left-side">
-            <div class="address details">
-                <i class="fas fa-map-marker-alt"></i>
-                <div class="topic">Address</div>
-                <div class="text-one">Nairobi, 45 Avenue</div>
-                <div class="text-two">Nakuru 06</div>
+<div class="section" id="contact">
+    <div class="" data-parallax="true" style="background-image: url('../../assets/images/team.jpg');">
+        <div class="container">
+            <div class="cc-contact">
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="card mb-0" data-aos="zoom-in">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h2 class="text-center title">Contact Us</h2>
+                                    <div class="card-body">
+                                        <form name="form" (ngSubmit)="f.form.valid ; f.resetForm()" #f="ngForm"
+                                            novalidate>
+                                            <div class="p pb-3">
+                                                <p class="text-center txt"> Experiencing symptoms of anxiety, trauma,
+                                                    suicidal thoughts, and panic attacks??? Or a member of
+                                                    your family or friend?<br>Feel free to reach out to us for help.</p>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <div class="col">
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon">
+                                                            <i class="fa fa-user-circle"></i>
+                                                        </span>
+                                                        <input class="form-control" type="text" name="name"
+                                                            placeholder="Name" [(ngModel)]="model.name" #name="ngModel"
+                                                            [ngClass]="{ 'is-invalid': f.submitted && name.invalid }"
+                                                            required />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <div class="col">
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon">
+                                                            <i class="fa fa-file-text"></i>
+                                                        </span>
+                                                        <input class="form-control" type="text" name="subject"
+                                                            placeholder="Subject" [(ngModel)]="model.subject"
+                                                            #subject="ngModel"
+                                                            [ngClass]="{ 'is-invalid': f.submitted && subject.invalid }"
+                                                            required />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <div class="col">
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon">
+                                                            <i class="fa fa-envelope"></i>
+                                                        </span>
+                                                        <input class="form-control" type="text" name="email"
+                                                            placeholder="E-mail" [(ngModel)]="model.email"
+                                                            #email="ngModel"
+                                                            [ngClass]="{ 'is-invalid': f.submitted && email.invalid }"
+                                                            pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"
+                                                            required />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <div class="col">
+                                                    <div class="form-group">
+                                                        <textarea class="form-control" name="message"
+                                                            placeholder="Your Message" [(ngModel)]="model.message"
+                                                            #message="ngModel"
+                                                            [ngClass]="{ 'is-invalid': f.submitted && message.invalid }"
+                                                            required></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <button class="btn btn-primary" type="submit">Send</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card-body" id="icons">
+                                        <br>
+                                        <div class="address details">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                            <div class="topic">Address</div>
+                                            <div class="text-one">Nairobi, 45 Avenue</div>
+                                            <div class="text-two">Nakuru 06</div>
+                                        </div><br>
+                                        <div class="phone details">
+                                            <i class="fas fa-phone-alt"></i>
+                                            <div class="topic">Phone</div>
+                                            <div class="text-one">+254 9893 5647</div>
+                                            <div class="text-two">+254 3434 5678</div>
+                                        </div><br>
+                                        <div class="email details">
+                                            <i class="fas fa-envelope"></i>
+                                            <div class="topic">Email</div>
+                                            <div class="text-one">afyabora@gmail.com</div>
+                                            <div class="text-two">info.afyabora@gmail.com</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="phone details">
-                <i class="fas fa-phone-alt"></i>
-                <div class="topic">Phone</div>
-                <div class="text-one">+254 9893 5647</div>
-                <div class="text-two">+254 3434 5678</div>
-            </div>
-            <div class="email details">
-                <i class="fas fa-envelope"></i>
-                <div class="topic">Email</div>
-                <div class="text-one">afyabora@gmail.com</div>
-                <div class="text-two">info.afyabora@gmail.com</div>
-            </div>
-        </div>
-        <div class="right-side">
-            <h2>Contact-Us</h2>
-            <div class="topic-text">Send us a message</div>
-            <p>Experiencing symptoms of anxiety, trauma, suicidal thoughts, and panic attacks??? Or a member of your family or friend?<br>Feel free to reach out to us for help.</p>
-            <form action="#">
-                <div class="input-box">
-                    <input type="text" placeholder="Enter your name">
-                </div>
-                <div class="input-box">
-                    <input type="text" placeholder="Enter your email">
-                </div>
-                <div class="input-box message-box">
-                    <input type="text" placeholder="Enter your message">
-                </div>
-                <div class="button">
-                    <input type="button" value="Send Now">
-                </div>
-            </form>
         </div>
     </div>
 </div>
