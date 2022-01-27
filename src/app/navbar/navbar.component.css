@@ -7,7 +7,7 @@
 }
 
 #bg{
-    /* background-color: #5545CD; */
+    background-color: #5545CD;
     color: #fff;
     border-radius: 15px;
 }
@@ -23,7 +23,3 @@ padding: 20px;
 #homelogo {
     max-width: 10%;
 }
-#bg:hover{
-    background: green;
-  }
-  
