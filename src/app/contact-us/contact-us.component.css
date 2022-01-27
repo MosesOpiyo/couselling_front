@@ -45,3 +45,7 @@ button:hover{
   max-width: 80%;
   padding-top: 20px;
 }
+#back {
+  padding-right: 60px;
+  padding-bottom: 10px;
+}
