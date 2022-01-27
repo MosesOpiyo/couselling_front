@@ -3,9 +3,20 @@
   style="box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1)"
 >
   <div class="container-fluid">
-    <a class="navbar-brand" href="#"
+    <a class="navbar-brand" href="#" style="font-family: Reggae One;"
       ><img src="../../assets/images/homelogo.png" alt="" id="homelogo"
     />Afya-Bora Counselling</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="list">
@@ -28,12 +39,20 @@
             More
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#"></a></li>
+            <li><a class="dropdown-item" href="contact-us">Contact-Us</a></li>
+            <li>
+              <a class="dropdown-item" href="#">English</a>
+              <ul class="sub-menu sub-menu">
+                <li><a href="">Arabic</a></li>
+                <li><a href="">Italian</a></li>
+                <li><a href="">French</a></li>
+              </ul>
+            </li>
           </ul>
         </li>
-        <li><a class="dropdown-item" routerLink="/login" id="bg">Login</a></li>
+        <li><a class="btn btn-primary" routerLink="/login" id="bg">Login</a></li>
         <li>
-          <a class="dropdown-item" routerLink="/register">Register</a>
+          <a class="dropdown-item" routerLink="/signup">Register</a>
         </li>
       </ul>
     </div>
