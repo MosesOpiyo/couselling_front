@@ -1,0 +1,35 @@
+#search{
+    background-color: #EFEFEF;
+    color: #000000;  
+}
+#form{
+    padding-left: 150px;
+}
+
+#bg{
+    /* background-color: #5545CD; */
+    color: #fff;
+    border-radius: 15px;
+}
+
+#btn{
+    background-color:#EFEFEF ;
+}
+
+#list li{
+padding: 20px;
+}
+
+#homelogo {
+    max-width: 10%;
+}
+#bg:hover{
+    background: green;
+}
+#reg {
+    border-radius: 15px;
+}
+#reg:hover {
+    background: green;
+}
+  
