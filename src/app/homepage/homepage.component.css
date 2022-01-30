@@ -1,3 +1,9 @@
+:root{
+    --mainclr:#239f85;
+    --secclr:#ff5d22;
+    --third:#DFE4E0;
+    --mainafterclr:hsl(167, 81%, 79%);
+}
 .fancy {
     color: blue;
 }
@@ -29,4 +35,136 @@ button:hover{
 .welcome {
     margin-left: 50px;
     margin-right: 50px;
+    width: 80%;
+    margin: auto;
+}
+
+
+.blogs{
+    width: 80%;
+    margin: auto;
+}
+
+/*servces*/
+
+.our-services{
+    padding: 4rem 7%;
+}
+.service-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.left-service-content{
+    flex: 1 1 45rem;
+}
+.right-service-content{
+    flex: 1 1 45rem;
+    display: flex;
+    justify-content: flex-end;
+
+}
+.left-service-content h1{
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+.left-service-content p{
+    font-size: 1.5rem;
+}
+.right-service-content .right-btn a{
+    padding: 1.5rem 3rem;
+    font-size: 2rem;
+    color: white;
+    background: var(--secclr);
+}
+.right-service-content .right-btn a:hover{
+    border: 1px solid var(--secclr);
+    background: transparent;
+    color: black;
+}
+.main-services{
+    padding-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.inner-services-content{
+    flex: 1 1 300px;
+    padding: 1rem 3rem;
+    text-align: center;
+}
+.inner-services-content h2{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.inner-services-content p{
+    font-size: 1.5rem;
+    line-height: 2;
+}
+.service-icon i{
+    font-size: 4rem;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 8rem;
+    background: var(--mainafterclr);
+    color: var(--mainclr);
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: .3s;
+}
+.service-icon i:hover{
+    color: white;
+    background: var(--mainclr);
+}
+
+.why-choseus{
+    padding: 4rem 7%;
+}
+.main-chose{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.inner-chose{
+    flex: 1 1 45rem;
+}
+.inner-chose img{
+    width: 100%;
+}
+.inner-chose h1{
+    font-size: 40px;
+    color: var(--mainclr);
+    margin-bottom: 20px;
+}
+.main-inner-chose{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+    
+}
+.chose-icon i{
+    width: 5rem;
+    height: 5rem;
+    line-height: 5rem;
+    background: white;
+    color: var(--mainclr);
+    font-size: 3rem;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.icon-content{
+    padding: 0 4rem;
+}
+.icon-content p{
+    font-size: 1.5rem;
+    line-height: 1;
 }
