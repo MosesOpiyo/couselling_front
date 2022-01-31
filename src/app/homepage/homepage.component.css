@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap');
 
-:root{
-    --mainclr:#239f85;
-    --secclr:#ff5d22;
-    --third:#DFE4E0;
-    --mainafterclr:hsl(167, 81%, 79%);
-}
 .fancy {
     color: blue;
 }
@@ -61,7 +55,7 @@ section .section-title{
 	/* text-transform:uppercase; */
 }
 #what-we-do{
-	background:#d3cdcd;
+background: #c9f5ff;
 }
 #what-we-do .card{
 	padding: 1rem!important;
@@ -133,7 +127,7 @@ section .section-title{
 
 .why-choseus{
     padding: 4rem 7%;
-    background: #c9f5ff;
+    
 }
 .main-chose{
     display: flex;
@@ -150,7 +144,6 @@ section .section-title{
 }
 .inner-chose h1{
     font-size: 40px;
-    color: ;
     margin-bottom: 20px;
     text-transform: uppercase;
 }
@@ -358,4 +351,4 @@ section:nth-child(even){
     background: var(--dark);
 }
 
-
+/* new */
